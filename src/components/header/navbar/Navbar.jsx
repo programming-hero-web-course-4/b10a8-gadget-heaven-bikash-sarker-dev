@@ -3,28 +3,41 @@ import { CiHeart } from "react-icons/ci";
 import { FaCartArrowDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ pathCatch }) => {
   let navList = (
     <>
       <li>
-        <Link className="text-t-primary" to="/">
+        <Link
+          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+          to="/"
+        >
           Home
         </Link>
       </li>
       <li>
-        <Link className="text-t-primary" to="/">
+        <Link
+          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+          to="/"
+        >
           Statistics
         </Link>
       </li>
       <li>
-        <Link className="text-t-primary" to="/">
+        <Link
+          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+          to="/"
+        >
           Dashboard
         </Link>
       </li>
     </>
   );
   return (
-    <div className="navbar  max-w-7xl mx-auto pt-7">
+    <div
+      className={`navbar  max-w-7xl mx-auto  ${
+        pathCatch === "/" ? "pt-7 " : ""
+      }`}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,7 +63,14 @@ const Navbar = () => {
             {navList}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-t-primary">Gadget Heaven</a>
+        <a
+          className={` btn btn-ghost text-xl ${
+            pathCatch === "/" ? "text-t-primary " : ""
+          }`}
+        >
+          {" "}
+          Gadget Heaven
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navList}</ul>

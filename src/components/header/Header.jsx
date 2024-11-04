@@ -1,12 +1,21 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import Hero from "./hero/Hero";
 import Navbar from "./navbar/Navbar";
 
 const Header = () => {
+  const location = useLocation();
+
+  let pathCatch = location.pathname;
+  console.log(pathCatch);
   return (
-    <div className="bg-p-primary m-11  rounded-3xl">
-      <Navbar />
-      <Hero />
+    <div
+      className={` ${
+        pathCatch === "/" ? "bg-p-primary m-11" : ""
+      }   rounded-3xl`}
+    >
+      <Navbar pathCatch={pathCatch} />
+      <Hero pathCatch={pathCatch} />
     </div>
   );
 };
