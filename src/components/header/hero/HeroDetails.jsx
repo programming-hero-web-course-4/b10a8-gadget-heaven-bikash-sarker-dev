@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroDetails = () => {
   return (
-    <div className="hero relative pb-48 mb-96  bg-p-primary">
+    <div className="hero relative pb-48   bg-p-primary">
       <div className="hero-content text-center">
         <div className="my-12">
           <h1 className="text-5xl font-bold text-t-primary leading-[65px]">

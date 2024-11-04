@@ -7,7 +7,7 @@ const Hero = ({ pathCatch }) => {
   let mainHero;
   if (pathCatch === "/") {
     return (mainHero = <HeroHome />);
-  } else if (pathCatch === "/details") {
+  } else if (pathCatch === pathCatch) {
     return (mainHero = <HeroDetails />);
   } else if (pathCatch === "/dashboard") {
     return (mainHero = <HeroDashboard />);

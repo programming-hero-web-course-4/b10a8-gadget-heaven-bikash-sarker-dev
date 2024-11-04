@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ gadget }) => {
-  const { price, product_image, product_title } = gadget;
+  const { product_id, price, product_image, product_title } = gadget;
   return (
     <div className="card bg-base-100  shadow-xl">
       <figure className="px-6 pt-6">
@@ -15,9 +16,12 @@ const ProductCard = ({ gadget }) => {
         <h2 className="card-title font-semibold text-xl ">{product_title}</h2>
         <p className="opacity-55">Price: {price}</p>
         <div className="card-actions">
-          <button className=" border transition duration-500 ease-out  hover:bg-p-primary hover:text-t-primary rounded-3xl py-2 px-5 text-p-primary font-semibold mt-2">
+          <Link
+            to={`/details/${product_id}`}
+            className=" border transition duration-500 ease-out  hover:bg-p-primary hover:text-t-primary rounded-3xl py-2 px-5 text-p-primary font-semibold mt-2"
+          >
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>
