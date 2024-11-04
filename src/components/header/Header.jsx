@@ -7,7 +7,7 @@ const Header = () => {
   const location = useLocation();
 
   let pathCatch = location.pathname;
-  console.log(pathCatch);
+
   return (
     <div
       className={` ${

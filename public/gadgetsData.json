@@ -73,7 +73,7 @@
     "product_id": "005",
     "product_title": "Apple Watch Series 9",
     "product_image": "https://img.freepik.com/free-vector/metallic-modern-watch_23-2147517453.jpg?t=st=1730711487~exp=1730715087~hmac=7b1af6af5ffd570542a44e0af136668c54afa699586fee8f4cfc64c15618222d&w=826",
-    "category": "smart watches",
+    "category": "watches",
     "price": 399.99,
     "description": "Smartwatch with health tracking, GPS, and always-on display.",
     "Specification": [
@@ -90,7 +90,7 @@
     "product_id": "006",
     "product_title": "Samsung Galaxy Watch 6",
     "product_image": "https://img.freepik.com/free-photo/close-up-hand-using-smartwatch-security_23-2148994223.jpg?t=st=1730711346~exp=1730714946~hmac=58b2d829ef6d0c605b7ca23bf527d4d9c891edde6b1cdd9db1010f99cb90ff74&w=1380",
-    "category": "smart watches",
+    "category": "watches",
     "price": 299.99,
     "description": "Feature-rich smartwatch with fitness and health tracking.",
     "Specification": [
@@ -224,7 +224,7 @@
     "product_id": "014",
     "product_title": "Fitbit Sense 2",
     "product_image": "https://img.freepik.com/free-vector/smartwatch-concept-illustration_114360-4306.jpg?t=st=1730711393~exp=1730714993~hmac=a1ccd087642da339813726028979790e71f05abd8f5b4abf8fb6555f2d921757&w=826",
-    "category": "smart watches",
+    "category": "watches",
     "price": 299.99,
     "description": "Advanced health smartwatch with stress management tools.",
     "Specification": [
@@ -287,7 +287,7 @@
     "product_id": "018",
     "product_title": "Garmin Venu 2 Plus",
     "product_image": "https://img.freepik.com/free-vector/realistic-fitness-tracker-bracelet-illustration-collection_23-2148555261.jpg?t=st=1730711443~exp=1730715043~hmac=c5406cf60e35ab0d4849d97525797f8766bdae13da0595ef8d29359842f94ddd&w=826",
-    "category": "smart watches",
+    "category": "watches",
     "price": 399.99,
     "description": "Smartwatch with GPS, heart rate monitoring, and AMOLED display.",
     "Specification": [

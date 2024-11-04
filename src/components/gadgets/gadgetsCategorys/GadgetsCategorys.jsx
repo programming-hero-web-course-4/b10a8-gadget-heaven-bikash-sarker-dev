@@ -9,7 +9,7 @@ const GadgetsCategorys = () => {
           isActive,
           isPending,
         }) => (isPending ? "pending" : isActive ? "active" : "")}`}
-        to=""
+        to="/"
       >
         All Product
       </NavLink>
@@ -18,7 +18,7 @@ const GadgetsCategorys = () => {
           isActive,
           isPending,
         }) => (isPending ? "pending" : isActive ? "active" : "")}`}
-        to=""
+        to="/laptops"
       >
         Laptops
       </NavLink>
@@ -27,7 +27,7 @@ const GadgetsCategorys = () => {
           isActive,
           isPending,
         }) => (isPending ? "pending" : isActive ? "active" : "")}`}
-        to=""
+        to="/phones"
       >
         Phones
       </NavLink>
@@ -36,7 +36,7 @@ const GadgetsCategorys = () => {
           isActive,
           isPending,
         }) => (isPending ? "pending" : isActive ? "active" : "")}`}
-        to=""
+        to="/chargers"
       >
         Accessories
       </NavLink>
@@ -45,7 +45,7 @@ const GadgetsCategorys = () => {
           isActive,
           isPending,
         }) => (isPending ? "pending" : isActive ? "active" : "")}`}
-        to=""
+        to="/watches"
       >
         smart Watches
       </NavLink>
@@ -54,9 +54,9 @@ const GadgetsCategorys = () => {
           isActive,
           isPending,
         }) => (isPending ? "pending" : isActive ? "active" : "")}`}
-        to=""
+        to="/cameras"
       >
-        Iphone
+        cameras
       </NavLink>
     </div>
   );

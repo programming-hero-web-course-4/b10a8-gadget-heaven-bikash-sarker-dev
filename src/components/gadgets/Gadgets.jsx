@@ -1,6 +1,6 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import GadgetsCategorys from "./gadgetsCategorys/GadgetsCategorys";
-import GadgetsProducts from "./gadgetsProduct/GadgetsProducts";
 
 const Gadgets = () => {
   return (
@@ -13,7 +13,7 @@ const Gadgets = () => {
           <GadgetsCategorys />
         </div>
         <div className="w-4/5">
-          <GadgetsProducts />
+          <Outlet />
         </div>
       </div>
     </div>
