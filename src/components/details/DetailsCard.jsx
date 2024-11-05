@@ -40,7 +40,7 @@ const DetailsCard = () => {
       toast.warn("All ready Add the some Product ");
     }
   };
-  console.log(gadgets);
+
   return (
     <div className="max-w-7xl mx-auto  bg-t-primary rounded-2xl p-6 relative -top-48">
       <div className="md:flex space-x-6 items-stretch">
