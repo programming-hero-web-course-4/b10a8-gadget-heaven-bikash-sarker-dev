@@ -3,13 +3,15 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { useLoaderData, useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
-import { CardContext } from "../../layout/Root";
+import { CardContext, WishListContext } from "../../layout/Root";
 import Rating from "./Rating";
 
 const DetailsCard = () => {
   let location = useLocation();
   let [gadgets, setGadgets] = useContext(CardContext);
+  let { wishlists, setWishlists } = useContext(WishListContext);
   let data = useLoaderData();
+
   let detailsProductId = location.pathname.split("/")[2];
 
   let detailsFind = data.find(
@@ -40,6 +42,22 @@ const DetailsCard = () => {
       toast.warn("All ready Add the some Product ");
     }
   };
+
+  //  product adding for wishlist
+  const handleAddWishlist = (gadget) => {
+    let findValue = wishlists.find(
+      (item) => item.product_id === gadget.product_id
+    );
+    let addWishlist = [...wishlists, gadget];
+    if (!findValue) {
+      setWishlists(addWishlist);
+      toast.success("Your wishlist add successful ! ");
+    } else {
+      toast.warn("All ready Add the some wishlist ! ");
+    }
+  };
+
+  console.log(wishlists);
 
   return (
     <div className="max-w-7xl mx-auto  bg-t-primary rounded-2xl p-6 relative -top-48">
@@ -86,7 +104,10 @@ const DetailsCard = () => {
             >
               Add To Card <FiShoppingCart className="text-xl" />
             </button>
-            <button className="btn btn-outline btn-circle ">
+            <button
+              onClick={() => handleAddWishlist(detailsFind)}
+              className="btn btn-outline btn-circle "
+            >
               <FaRegHeart className="text-xl" />
             </button>
           </div>

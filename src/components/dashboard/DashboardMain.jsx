@@ -8,6 +8,7 @@ import NotAddCard from "./NotAddCard";
 const DashboardMain = () => {
   const [gadgets, setGadgets] = useContext(CardContext);
 
+  //   remove function working
   const handleRemoveCard = (card) => {
     let cartRemove = gadgets.filter(
       (gadget) => gadget.product_id !== card.product_id
@@ -18,12 +19,12 @@ const DashboardMain = () => {
 
   return (
     <div className="max-w-7xl mx-auto ">
-      <DashboardCartTatolSort />
+      <DashboardCartTatolSort gadgets={gadgets} setGadgets={setGadgets} />
       <div className="mt-10">
-        {gadgets.length === 0 ? (
+        {gadgets?.length === 0 ? (
           <NotAddCard />
         ) : (
-          gadgets.map((card, i) => (
+          gadgets?.map((card, i) => (
             <CardDashboard
               key={i}
               card={card}
