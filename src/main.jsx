@@ -9,6 +9,7 @@ import Phones from "./components/categories/Phones";
 import SmartWatches from "./components/categories/SmartWatches";
 import "./index.css";
 import Root from "./layout/Root";
+import ContactPage from "./pages/ContactPage";
 import Dashboard from "./pages/Dashboard";
 import DetailsPage from "./pages/DetailsPage";
 import ErrorPage from "./pages/ErrorPage";
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/contact",
+        element: <ContactPage />,
       },
     ],
   },

@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+
 import { Outlet } from "react-router-dom";
 import "react-tabs/style/react-tabs.css";
 import { ToastContainer } from "react-toastify";
@@ -8,12 +9,13 @@ import Header from "../components/header/Header";
 
 export const CardContext = createContext();
 export const DashboardContext = createContext();
-export const WishListContext = createContext();
+export const WishListContext = createContext(true);
 
 const Root = () => {
   const [gadgets, setGadgets] = useState([]);
   const [wishlists, setWishlists] = useState([]);
   const [dashCardWish, setDashCardWish] = useState(true);
+
   return (
     <div>
       <ToastContainer

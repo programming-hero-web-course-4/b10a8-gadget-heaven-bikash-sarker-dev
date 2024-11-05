@@ -17,10 +17,7 @@ const Navbar = ({ pathCatch }) => {
         </Link>
       </li>
       <li>
-        <Link
-          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
-          to="/"
-        >
+        <Link className={`${pathCatch === "/" ? "text-t-primary " : ""}`}>
           Statistics
         </Link>
       </li>
@@ -30,6 +27,14 @@ const Navbar = ({ pathCatch }) => {
           to="/dashboard"
         >
           Dashboard
+        </Link>
+      </li>
+      <li>
+        <Link
+          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+          to="/contact"
+        >
+          Contact
         </Link>
       </li>
     </>
