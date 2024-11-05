@@ -42,7 +42,7 @@ const Navbar = ({ pathCatch }) => {
   return (
     <div
       className={`navbar  max-w-7xl mx-auto  ${
-        pathCatch === "/" ? "pt-7 " : ""
+        pathCatch === "/" ? "pt-7 " : "my-4"
       }`}
     >
       <div className="navbar-start">

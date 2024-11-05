@@ -10,11 +10,9 @@ const DashboardCartTatolSort = ({ gadgets, setGadgets }) => {
   let totalMoney = Math.round(total);
 
   //   shopping card sorting working
-
   const handleCardShoppingSorting = () => {
-    setGadgets(
-      gadgets.sort((gadget1, gadget2) => gadget2.price - gadget1.price)
-    );
+    let descendingOrder = gadgets.sort((des1, des2) => des2.price - des1.price);
+    setGadgets(descendingOrder);
   };
 
   //   purchase function working
