@@ -14,15 +14,6 @@ const HeroDetails = () => {
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-
-          {/* <div className="max-w-4xl mx-auto bg-[#ffffff4d] rounded-3xl border border-[#fff] absolute -bottom-[400px] inset-x-0 ">
-            <img
-              style={{ borderRadius: "50px" }}
-              className="w-full rounded-2xl  p-6"
-              src={Banner}
-              alt="banner"
-            />
-          </div> */}
         </div>
       </div>
     </div>

@@ -7,7 +7,14 @@ import HeroHome from "./HeroHome";
 const Hero = ({ pathCatch }) => {
   let mainHero;
 
-  if (pathCatch === "/") {
+  if (
+    pathCatch === "/" ||
+    pathCatch.includes("laptops") ||
+    pathCatch.includes("phones") ||
+    pathCatch.includes("chargers") ||
+    pathCatch.includes("watches") ||
+    pathCatch.includes("cameras")
+  ) {
     return (mainHero = <HeroHome />);
   } else if (pathCatch.includes("/details")) {
     return (mainHero = <HeroDetails />);
@@ -16,7 +23,7 @@ const Hero = ({ pathCatch }) => {
   } else if (pathCatch === "/contact") {
     return (mainHero = <HeroContact />);
   }
-  return <div className="pb-48   bg-p-primary">{mainHero}</div>;
+  return <div className="pb-48  bg-p-primary">{mainHero}</div>;
 };
 
 export default Hero;

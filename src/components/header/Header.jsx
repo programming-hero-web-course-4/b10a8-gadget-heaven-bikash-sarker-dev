@@ -11,7 +11,14 @@ const Header = () => {
   return (
     <div
       className={` ${
-        pathCatch === "/" ? "bg-p-primary m-11" : ""
+        pathCatch === "/" ||
+        pathCatch.includes("laptops") ||
+        pathCatch.includes("phones") ||
+        pathCatch.includes("chargers") ||
+        pathCatch.includes("watches") ||
+        pathCatch.includes("cameras")
+          ? "bg-p-primary m-11"
+          : ""
       }   rounded-3xl`}
     >
       <Navbar pathCatch={pathCatch} />
