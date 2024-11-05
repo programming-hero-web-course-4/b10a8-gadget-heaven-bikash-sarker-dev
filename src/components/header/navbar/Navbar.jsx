@@ -1,9 +1,11 @@
-import React from "react";
+import { useContext } from "react";
 import { CiHeart } from "react-icons/ci";
 import { FaCartArrowDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { CardContext } from "../../../layout/Root";
 
 const Navbar = ({ pathCatch }) => {
+  const [gadgets] = useContext(CardContext);
   let navList = (
     <>
       <li>
@@ -25,7 +27,7 @@ const Navbar = ({ pathCatch }) => {
       <li>
         <Link
           className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
-          to="/"
+          to="/dashboard"
         >
           Dashboard
         </Link>
@@ -75,9 +77,12 @@ const Navbar = ({ pathCatch }) => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navList}</ul>
       </div>
-      <div className="navbar-end space-x-4">
-        <a className="btn  btn-circle ">
+      <div className="navbar-end space-x-6">
+        <a className="btn  btn-circle relative">
           <FaCartArrowDown className="text-xl" />{" "}
+          <div className="w-5 h-5 rounded-full bg-[#052e16] p-1 absolute -right-3 top-1">
+            <span className="text-t-primary ">{gadgets.length}</span>
+          </div>
         </a>
         <a className="btn  btn-circle">
           <CiHeart className="text-xl" />{" "}

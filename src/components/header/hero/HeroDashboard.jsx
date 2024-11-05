@@ -14,14 +14,14 @@ const HeroDashboard = () => {
             it all!
           </p>
 
-          {/* <div className="max-w-4xl mx-auto bg-[#ffffff4d] rounded-3xl border border-[#fff] absolute -bottom-[400px] inset-x-0 ">
-          <img
-            style={{ borderRadius: "50px" }}
-            className="w-full rounded-2xl  p-6"
-            src={Banner}
-            alt="banner"
-          />
-        </div> */}
+          <div className="mt-8">
+            <button className="bg-t-primary mr-6 py-2 px-8 border border-[#fff] rounded-3xl font-semibold">
+              Card
+            </button>
+            <button className=" py-2 px-10 border border-[#fff] rounded-3xl font-semibold">
+              Wishlist
+            </button>
+          </div>
         </div>
       </div>
     </div>

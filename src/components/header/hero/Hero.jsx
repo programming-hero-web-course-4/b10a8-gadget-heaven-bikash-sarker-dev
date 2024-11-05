@@ -5,9 +5,10 @@ import HeroHome from "./HeroHome";
 
 const Hero = ({ pathCatch }) => {
   let mainHero;
+  console.log(pathCatch);
   if (pathCatch === "/") {
     return (mainHero = <HeroHome />);
-  } else if (pathCatch === pathCatch) {
+  } else if (pathCatch.includes("/details")) {
     return (mainHero = <HeroDetails />);
   } else if (pathCatch === "/dashboard") {
     return (mainHero = <HeroDashboard />);

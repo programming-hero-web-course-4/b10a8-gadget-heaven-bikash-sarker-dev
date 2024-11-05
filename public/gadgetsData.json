@@ -14,7 +14,7 @@
       "21-hour battery life"
     ],
     "availability": true,
-    "rating": 4.8,
+    "rating": 5,
     "other": { "color": "Space Gray", "warranty": "1 year" }
   },
   {
@@ -66,7 +66,7 @@
       "48MP main camera"
     ],
     "availability": true,
-    "rating": 4.8,
+    "rating": 2.5,
     "other": { "color": "Space Black", "5G Support": true }
   },
   {
@@ -83,7 +83,7 @@
       "Water resistant 50m"
     ],
     "availability": true,
-    "rating": 4.7,
+    "rating": 3.7,
     "other": { "size": "45mm", "strap": "Silicone" }
   },
   {
@@ -117,7 +117,7 @@
       "In-body stabilization"
     ],
     "availability": true,
-    "rating": 4.8,
+    "rating": 3.2,
     "other": { "connectivity": "WiFi & Bluetooth", "lens_mount": "E-mount" }
   },
   {
@@ -146,7 +146,7 @@
     "description": "High-capacity portable charger with dual input and three USB outputs.",
     "Specification": ["26800mAh", "Dual input", "3 USB ports", "Fast charging"],
     "availability": true,
-    "rating": 4.7,
+    "rating": 2.7,
     "other": { "color": "Black", "warranty": "18 months" }
   },
   {
@@ -197,7 +197,7 @@
       "512GB SSD"
     ],
     "availability": true,
-    "rating": 4.8,
+    "rating": 5,
     "other": { "color": "Nightfall Black", "warranty": "1 year" }
   },
   {
@@ -214,7 +214,7 @@
       "Dual screens"
     ],
     "availability": true,
-    "rating": 4.6,
+    "rating": 3.6,
     "other": {
       "battery_life": "160 minutes",
       "connectivity": "WiFi & Bluetooth"
@@ -234,7 +234,7 @@
       "Water resistant 50m"
     ],
     "availability": true,
-    "rating": 4.6,
+    "rating": 1.2,
     "other": { "color": "Graphite", "band_material": "Silicone" }
   },
   {
@@ -246,7 +246,7 @@
     "description": "Ultra-light laptop with powerful performance for business.",
     "Specification": ["14-inch FHD", "Intel Core i7", "16GB RAM", "1TB SSD"],
     "availability": true,
-    "rating": 4.7,
+    "rating": 3.2,
     "other": { "color": "Black", "warranty": "3 years" }
   },
   {
@@ -263,7 +263,7 @@
       "Compact design"
     ],
     "availability": true,
-    "rating": 4.8,
+    "rating": 3.8,
     "other": { "color": "Black", "warranty": "18 months" }
   },
   {
@@ -280,7 +280,7 @@
       "256GB storage"
     ],
     "availability": true,
-    "rating": 4.6,
+    "rating": 4,
     "other": { "color": "Eternal Green", "5G Support": true }
   },
   {
@@ -297,7 +297,7 @@
       "Health tracking"
     ],
     "availability": true,
-    "rating": 4.7,
+    "rating": 5,
     "other": { "color": "Slate", "strap_material": "Silicone" }
   }
 ]
