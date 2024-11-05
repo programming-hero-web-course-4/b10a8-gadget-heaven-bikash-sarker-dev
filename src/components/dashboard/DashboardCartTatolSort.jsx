@@ -1,4 +1,5 @@
 import { TbChartCandleFilled } from "react-icons/tb";
+import Modal from "./Modal";
 
 const DashboardCartTatolSort = ({ gadgets, setGadgets }) => {
   //   total money sum working
@@ -16,6 +17,11 @@ const DashboardCartTatolSort = ({ gadgets, setGadgets }) => {
     );
   };
 
+  //   purchase function working
+  const handlePurchase = () => {
+    document.getElementById("my_modal_1").showModal();
+  };
+
   return (
     <div className="flex justify-between">
       <h2 className="text-3xl font-bold">Card</h2>
@@ -27,10 +33,16 @@ const DashboardCartTatolSort = ({ gadgets, setGadgets }) => {
         >
           Sort by Price <TbChartCandleFilled className="text-xl ml-2" />
         </button>
-        <button className="border bg-p-primary py-2 px-6 text-lg text-t-primary rounded-full">
+        <button
+          onClick={handlePurchase}
+          className={`border bg-p-primary py-2 px-6 text-lg text-t-primary rounded-full ${
+            gadgets.length === 0 ? "btn btn-disabled" : ""
+          } `}
+        >
           Purchase
         </button>
       </div>
+      <Modal totalMoney={totalMoney} />
     </div>
   );
 };
