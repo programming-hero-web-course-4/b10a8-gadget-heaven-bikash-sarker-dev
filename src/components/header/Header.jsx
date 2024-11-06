@@ -14,22 +14,29 @@ const Header = () => {
       setScroll(window.scrollY > 5);
     });
   });
+  let margins;
+  if (scroll) {
+    margins = "m-0";
+  } else {
+    margins = "m-11";
+  }
 
+  console.log(margins);
   return (
     <div
-      className={`${scroll ? "m-0" : " "} ${
+      className={` ${
         pathCatch === "/" ||
         pathCatch.includes("laptops") ||
         pathCatch.includes("phones") ||
         pathCatch.includes("chargers") ||
         pathCatch.includes("watches") ||
         pathCatch.includes("cameras")
-          ? `bg-p-primary  m-11`
+          ? `bg-p-primary ${margins}`
           : ""
       }   rounded-3xl`}
     >
       <Navbar pathCatch={pathCatch} scroll={scroll} />
-      <Hero pathCatch={pathCatch} />
+      <Hero pathCatch={pathCatch} scroll={scroll} />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import HeroDashboard from "./HeroDashboard";
 import HeroDetails from "./HeroDetails";
 import HeroHome from "./HeroHome";
 
-const Hero = ({ pathCatch }) => {
+const Hero = ({ pathCatch, scroll }) => {
   let mainHero;
 
   if (
@@ -23,7 +23,7 @@ const Hero = ({ pathCatch }) => {
   } else if (pathCatch === "/contact") {
     return (mainHero = <HeroContact />);
   }
-  return <div className="pb-48  bg-p-primary">{mainHero}</div>;
+  return <div className={`pb-48  bg-p-primary `}>{mainHero}</div>;
 };
 
 export default Hero;
