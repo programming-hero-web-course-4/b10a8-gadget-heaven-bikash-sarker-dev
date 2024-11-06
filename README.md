@@ -6,8 +6,8 @@ This project is technology gadget related and we can buy products from this proj
 
 #### Attach Live Website Link
 
-- [My GitHub private repositories link:](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-bikash-sarker-dev)
-- [live website link:](https://gadgets-heavens.netlify.app/)
+- My GitHub private repositories link: [ https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-bikash-sarker-dev](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-bikash-sarker-dev)
+- Live website link: [https://gadgets-heavens.netlify.app/](https://gadgets-heavens.netlify.app/)
 
 ### List of React Fundamental concepts used in the project
 
