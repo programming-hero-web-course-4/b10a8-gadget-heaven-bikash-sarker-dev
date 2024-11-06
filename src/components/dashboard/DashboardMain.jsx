@@ -17,6 +17,7 @@ const DashboardMain = () => {
     setGadgets(cartRemove);
   };
 
+  console.log(gadgets);
   return (
     <div className="max-w-7xl mx-auto ">
       <DashboardCartTatolSort gadgets={gadgets} setGadgets={setGadgets} />

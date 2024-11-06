@@ -1,8 +1,8 @@
+// import { useEffect, useState } from "react";
 import { TbChartCandleFilled } from "react-icons/tb";
 import Modal from "./Modal";
 
 const DashboardCartTatolSort = ({ gadgets, setGadgets }) => {
-  //   total money sum working
   let total = 0;
   let totalMoneySum = gadgets.forEach((taka) => {
     total = taka.price + total;
@@ -11,7 +11,9 @@ const DashboardCartTatolSort = ({ gadgets, setGadgets }) => {
 
   //   shopping card sorting working
   const handleCardShoppingSorting = () => {
-    let descendingOrder = gadgets.sort((des1, des2) => des2.price - des1.price);
+    let descendingOrder = [...gadgets].sort(
+      (des1, des2) => des2.price - des1.price
+    );
     setGadgets(descendingOrder);
   };
 
@@ -26,7 +28,7 @@ const DashboardCartTatolSort = ({ gadgets, setGadgets }) => {
       <div className="flex items-center gap-4">
         <span className="text-xl font-bold">Total cost: $ {totalMoney}</span>
         <button
-          onClick={() => handleCardShoppingSorting()}
+          onClick={handleCardShoppingSorting}
           className="border border-p-primary py-2 px-6 font-semibold text-lg text-p-primary rounded-full flex items-center"
         >
           Sort by Price <TbChartCandleFilled className="text-xl ml-2" />
