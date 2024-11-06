@@ -39,3 +39,9 @@ body {
 .sticky a {
   color: #fff;
 }
+
+@media only screen and (max-width: 992px) {
+  .sticky a {
+    color: #000;
+  }
+}

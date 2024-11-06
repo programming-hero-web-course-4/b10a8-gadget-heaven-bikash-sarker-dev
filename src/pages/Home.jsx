@@ -4,7 +4,7 @@ import Gadgets from "../components/gadgets/Gadgets";
 
 const Home = () => {
   return (
-    <div className="bg-[#f6f6f6] ">
+    <div className="bg-[#f6f6f6] px-4 xl:px-0">
       <HelmetProvider>
         <Helmet>
           <title>Home | Gadgets Heaven</title>

@@ -9,9 +9,8 @@ const HeroContact = () => {
             Contact
           </h1>
           <p className="max-w-2xl mx-auto my-3 text-t-primary ">
-            Explore the latest gadgets that will take your experience to the
-            next level. From smart devices to the coolest accessories, we have
-            it all!
+            If there is any problem related to the product, you can email or if
+            you want, you can fill the form and send it
           </p>
         </div>
       </div>

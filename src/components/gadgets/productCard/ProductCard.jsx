@@ -9,7 +9,7 @@ const ProductCard = ({ gadget }) => {
         <img
           src={product_image}
           alt="Shoes"
-          className="rounded-xl h-48 w-full object-cover"
+          className="rounded-xl  lg:h-48 w-full object-cover"
         />
       </figure>
       <div className="card-body ">

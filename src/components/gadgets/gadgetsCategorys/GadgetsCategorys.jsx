@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const GadgetsCategorys = () => {
   return (
-    <div className="bg-t-primary  rounded-xl p-5 space-y-5">
+    <div className="bg-t-primary w-full rounded-xl p-5 space-y-5">
       <NavLink
-        className={`btn btn-block rounded-3xl px-10 ${({
+        className={`btn btn-block  rounded-3xl px-10 ${({
           isActive,
           isPending,
         }) => (isPending ? "pending" : isActive ? "active" : "")}`}

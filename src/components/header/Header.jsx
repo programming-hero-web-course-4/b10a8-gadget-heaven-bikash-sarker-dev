@@ -18,7 +18,7 @@ const Header = () => {
   if (scroll) {
     margins = "m-0";
   } else {
-    margins = "m-11";
+    margins = "lg:m-11";
   }
 
   console.log(margins);
@@ -33,10 +33,10 @@ const Header = () => {
         pathCatch.includes("cameras")
           ? `bg-p-primary ${margins}`
           : ""
-      }   rounded-3xl`}
+      }   lg:rounded-3xl`}
     >
       <Navbar pathCatch={pathCatch} scroll={scroll} />
-      <Hero pathCatch={pathCatch} scroll={scroll} />
+      <Hero pathCatch={pathCatch} />
     </div>
   );
 };

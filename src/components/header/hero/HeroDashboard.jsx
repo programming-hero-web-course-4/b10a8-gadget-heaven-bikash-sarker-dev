@@ -20,9 +20,9 @@ const HeroDashboard = () => {
             Dashboard
           </h1>
           <p className="max-w-2xl mx-auto my-3 text-t-primary ">
-            Explore the latest gadgets that will take your experience to the
-            next level. From smart devices to the coolest accessories, we have
-            it all!
+            In dashboard we have enter button one button is my card another
+            button is my wish list card button click show me card list click
+            wish list show.
           </p>
 
           <div className="mt-8">

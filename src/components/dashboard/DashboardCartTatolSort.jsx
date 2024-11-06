@@ -23,19 +23,19 @@ const DashboardCartTatolSort = ({ gadgets, setGadgets }) => {
   };
 
   return (
-    <div className="flex justify-between">
+    <div className="md:flex justify-between">
       <h2 className="text-3xl font-bold">Card</h2>
-      <div className="flex items-center gap-4">
+      <div className="sm:flex items-center space-y-4 sm:space-y-0  gap-4 text-center">
         <span className="text-xl font-bold">Total cost: $ {totalMoney}</span>
         <button
           onClick={handleCardShoppingSorting}
-          className="border border-p-primary py-2 px-6 font-semibold text-lg text-p-primary rounded-full flex items-center"
+          className="border border-p-primary w-full sm:w-auto py-2 px-6 font-semibold text-lg text-p-primary rounded-full flex items-center justify-center"
         >
           Sort by Price <TbChartCandleFilled className="text-xl ml-2" />
         </button>
         <button
           onClick={handlePurchase}
-          className={`border bg-p-primary py-2 px-6 text-lg text-t-primary rounded-full ${
+          className={`border bg-p-primary py-2 px-6 text-lg w-full sm:w-auto text-t-primary rounded-full ${
             gadgets.length === 0 ? "btn btn-disabled" : ""
           } `}
         >

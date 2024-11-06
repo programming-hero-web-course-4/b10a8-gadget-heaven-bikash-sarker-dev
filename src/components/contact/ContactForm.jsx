@@ -3,11 +3,11 @@ import Send from "../../assets/images/contact.jpg";
 
 const ContactForm = () => {
   return (
-    <div className="flex justify-between items-center gap-10 my-16">
-      <div className="w-1/2">
+    <div className="lg:flex justify-between items-center gap-10 my-16">
+      <div className="lg:w-1/2">
         <img src={Send} alt="" />
       </div>
-      <div className="w-1/2">
+      <div className="lg:w-1/2">
         <div className="card bg-base-100 w-full  shrink-0 shadow-2xl">
           <form className="card-body">
             <div className="form-control">

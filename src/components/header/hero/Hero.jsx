@@ -4,7 +4,7 @@ import HeroDashboard from "./HeroDashboard";
 import HeroDetails from "./HeroDetails";
 import HeroHome from "./HeroHome";
 
-const Hero = ({ pathCatch, scroll }) => {
+const Hero = ({ pathCatch }) => {
   let mainHero;
 
   if (

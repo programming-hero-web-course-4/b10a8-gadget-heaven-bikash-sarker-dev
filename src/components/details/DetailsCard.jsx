@@ -60,18 +60,18 @@ const DetailsCard = () => {
   let filterDisableHeardBtn = wishlists.filter(
     (item) => item.product_id === detailsProductId
   );
-  console.log(filterDisableHeardBtn);
+
   return (
     <div className="max-w-7xl mx-auto  bg-t-primary rounded-2xl p-6 relative -top-48">
-      <div className="md:flex space-x-6 items-stretch">
-        <div className="w-2/5">
+      <div className="lg:flex lg:space-x-6 items-stretch">
+        <div className="lg:w-2/5">
           <img
-            className="rounded-xl h-[490px] w-full"
+            className="rounded-xl lg:h-[490px] w-full"
             src={product_image}
             alt={product_title}
           />
         </div>
-        <div className="w-3/5">
+        <div className="lg:w-3/5 mt-6 lg:mt-0">
           <div>
             <h3 className="text-2xl font-semibold ">{product_title}</h3>
             <p className="font-medium opacity-60 mt-2 mb-5">Price: $ {price}</p>

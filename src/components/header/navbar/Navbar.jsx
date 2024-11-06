@@ -12,7 +12,7 @@ const Navbar = ({ pathCatch, scroll }) => {
     <>
       <li>
         <Link
-          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+          className={`${pathCatch === "/" ? "lg:text-t-primary " : ""}`}
           to="/"
         >
           Home
@@ -21,14 +21,14 @@ const Navbar = ({ pathCatch, scroll }) => {
       <li>
         <Link
           to="/statistics"
-          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+          className={`${pathCatch === "/" ? "lg:text-t-primary " : ""}`}
         >
           Statistics
         </Link>
       </li>
       <li>
         <Link
-          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+          className={`${pathCatch === "/" ? "lg:text-t-primary " : ""}`}
           to="/dashboard"
         >
           Dashboard
@@ -36,7 +36,7 @@ const Navbar = ({ pathCatch, scroll }) => {
       </li>
       <li>
         <Link
-          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+          className={`${pathCatch === "/" ? "lg:text-t-primary " : ""}`}
           to="/contact"
         >
           Contact
@@ -47,7 +47,7 @@ const Navbar = ({ pathCatch, scroll }) => {
   return (
     <div
       className={`navbar py-5 ${
-        scroll ? "sticky w-full p-5  " : "max-w-7xl"
+        scroll ? "sticky w-full p-5 pl-0 md:pl-5 " : "max-w-7xl"
       }  mx-auto  ${pathCatch === "/" ? "pt-5 " : " "}`}
     >
       <div className="navbar-start">
@@ -76,7 +76,7 @@ const Navbar = ({ pathCatch, scroll }) => {
           </ul>
         </div>
         <a
-          className={` btn btn-ghost text-xl ${
+          className={` btn btn-ghost text-lg lg:text-xl ${
             pathCatch === "/" ? "text-t-primary " : ""
           }`}
         >
@@ -87,14 +87,14 @@ const Navbar = ({ pathCatch, scroll }) => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navList}</ul>
       </div>
-      <div className="navbar-end space-x-6">
-        <button className="btn  btn-circle relative">
+      <div className="navbar-end space-x-4 md:space-x-6">
+        <button className="btn  btn-circle btn-sm md:btn-md relative">
           <FaCartArrowDown className="text-xl" />{" "}
           <div className="w-5 h-5 rounded-full bg-[#052e16] p-1 absolute -right-3 top-1">
             <span className="text-t-primary ">{gadgets.length}</span>
           </div>
         </button>
-        <button className="btn  btn-circle relative">
+        <button className="btn  btn-circle btn-sm md:btn-md relative">
           <CiHeart className="text-xl" />{" "}
           {wishlists.length === 0 ? (
             " "
