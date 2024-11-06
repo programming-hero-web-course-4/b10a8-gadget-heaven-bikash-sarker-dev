@@ -3,7 +3,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { DashboardContext } from "../../layout/Root";
 
-const CardDashboard = ({ card, handleRemoveCard }) => {
+const CardDashboard = ({ card, handleRemoveCard, handleAddCard }) => {
   const { dashCardWish } = useContext(DashboardContext);
   const { product_image, product_title, price, description } = card;
 
@@ -28,7 +28,7 @@ const CardDashboard = ({ card, handleRemoveCard }) => {
           ) : (
             <div>
               <button
-                //   onClick={() => handleAddCard(detailsFind)}
+                onClick={() => handleAddCard(card)}
                 className="btn bg-p-primary rounded-3xl px-6 text-t-primary hover:text-p-primary"
               >
                 Add To Card <FiShoppingCart className="text-xl" />
