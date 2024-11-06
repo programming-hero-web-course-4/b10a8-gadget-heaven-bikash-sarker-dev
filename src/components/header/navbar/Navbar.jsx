@@ -76,7 +76,7 @@ const Navbar = ({ pathCatch, scroll }) => {
           </ul>
         </div>
         <a
-          className={` btn btn-ghost text-lg lg:text-xl ${
+          className={` btn btn-ghost text-md sm:text-xl ${
             pathCatch === "/" ? "text-t-primary " : ""
           }`}
         >
@@ -87,7 +87,7 @@ const Navbar = ({ pathCatch, scroll }) => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navList}</ul>
       </div>
-      <div className="navbar-end space-x-4 md:space-x-6">
+      <div className="navbar-end space-x-4 md:space-x-6 mr-3 lg:mr-0">
         <button className="btn  btn-circle btn-sm md:btn-md relative">
           <FaCartArrowDown className="text-xl" />{" "}
           <div className="w-5 h-5 rounded-full bg-[#052e16] p-1 absolute -right-3 top-1">
