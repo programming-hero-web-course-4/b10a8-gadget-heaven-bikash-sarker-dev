@@ -19,7 +19,10 @@ const Navbar = ({ pathCatch, scroll }) => {
         </Link>
       </li>
       <li>
-        <Link className={`${pathCatch === "/" ? "text-t-primary " : ""}`}>
+        <Link
+          to="/statistics"
+          className={`${pathCatch === "/" ? "text-t-primary " : ""}`}
+        >
           Statistics
         </Link>
       </li>
