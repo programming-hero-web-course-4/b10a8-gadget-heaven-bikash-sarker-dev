@@ -56,9 +56,11 @@ const DetailsCard = () => {
       toast.warn("All ready Add the some wishlist ! ");
     }
   };
-
   console.log(wishlists);
-
+  let filterDisableHeardBtn = wishlists.filter(
+    (item) => item.product_id === detailsProductId
+  );
+  console.log(filterDisableHeardBtn);
   return (
     <div className="max-w-7xl mx-auto  bg-t-primary rounded-2xl p-6 relative -top-48">
       <div className="md:flex space-x-6 items-stretch">
@@ -106,7 +108,9 @@ const DetailsCard = () => {
             </button>
             <button
               onClick={() => handleAddWishlist(detailsFind)}
-              className="btn btn-outline btn-circle "
+              className={`btn btn-outline btn-circle ${
+                filterDisableHeardBtn.length !== 0 ? "btn-disabled" : " "
+              }`}
             >
               <FaRegHeart className="text-xl" />
             </button>

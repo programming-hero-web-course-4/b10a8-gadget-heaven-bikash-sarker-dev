@@ -116,7 +116,7 @@
       "10fps burst",
       "In-body stabilization"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 3.2,
     "other": { "connectivity": "WiFi & Bluetooth", "lens_mount": "E-mount" }
   },
@@ -254,7 +254,7 @@
     "product_title": "Anker Nano II 65W Charger",
     "product_image": "https://img.freepik.com/free-photo/charger-usb-cable-type-c-orange-background_58702-4577.jpg?t=st=1730711166~exp=1730714766~hmac=c0afddb4afea2c35cca606f78596553c7646c24fe8d1425b27b7b015349c0f63&w=1380",
     "category": "chargers",
-    "price": 39.99,
+    "price": 60.99,
     "description": "Compact 65W USB-C charger with GaN technology.",
     "Specification": [
       "65W output",

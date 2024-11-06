@@ -2,10 +2,13 @@ import { useContext } from "react";
 import { CiHeart } from "react-icons/ci";
 import { FaCartArrowDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { CardContext } from "../../../layout/Root";
+import { CardContext, WishListContext } from "../../../layout/Root";
 
 const Navbar = ({ pathCatch }) => {
   const [gadgets] = useContext(CardContext);
+  const { wishlists } = useContext(WishListContext);
+
+  console.log(wishlists);
   let navList = (
     <>
       <li>
@@ -89,8 +92,15 @@ const Navbar = ({ pathCatch }) => {
             <span className="text-t-primary ">{gadgets.length}</span>
           </div>
         </a>
-        <a className="btn  btn-circle">
+        <a className="btn  btn-circle relative">
           <CiHeart className="text-xl" />{" "}
+          {wishlists.length === 0 ? (
+            " "
+          ) : (
+            <div className="w-5 h-5 rounded-full bg-[#052e16] p-1 absolute -right-3 top-1">
+              <span className="text-t-primary ">{wishlists.length}</span>
+            </div>
+          )}
         </a>
       </div>
     </div>
